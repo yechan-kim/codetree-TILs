@@ -4,8 +4,8 @@ fun main() {
 
     for (i in 1..N) {
         sum += i
-        
-        if(sum > N){
+
+        if(sum >= N){
             print(i)
 
             return
