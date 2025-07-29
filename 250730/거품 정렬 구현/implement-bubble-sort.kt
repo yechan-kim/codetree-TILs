@@ -1,6 +1,6 @@
 fun main() {
     val n = readLine()!!.toInt()
-    val arr = readln().split(" ").map { it.toInt() }.sorted()
+    val arr = readln().split(" ").sorted()
     // Please write your code here.
 
     for(i in 0 until n){
