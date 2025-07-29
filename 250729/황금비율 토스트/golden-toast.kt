@@ -8,22 +8,22 @@ fun main() {
     for (i in 0 until m) {
         val tokens = readLine()!!.split(" ")
         when (tokens[0]) {
-            "L" -> {
+            "R" -> {
                 if(cursor == breadState.size) continue
                 cursor++
             }
-            "R" -> {
+            "L" -> {
                 if(cursor == 0) continue
                 cursor--
             }
             "D" -> {
-                if(cursor == 0) continue
-                cursor--
+                if(cursor == breadState.size) continue
                 breadState.removeAt(cursor)
             }
             "P" -> {
                 val a = tokens[1].toCharArray()[0]
                 breadState.add(cursor, a)
+                cursor++
             }
         }
     }
